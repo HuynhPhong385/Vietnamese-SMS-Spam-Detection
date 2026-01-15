@@ -3,7 +3,7 @@
 Dự án sử dụng học máy để phân loại tin nhắn rác (Spam) và tin nhắn thường (Ham) cho tiếng Việt.
 
 ## 🛠 Cài đặt
-1. Clone dự án: `git clone <link-cua-ban>`
+1. Clone dự án: `git clone github.com/HuynhPhong385/Vietnamese-SMS-Spam-Detection`
 2. Tạo môi trường ảo: `python -m venv venv`
 3. Kích hoạt venv: `.\venv\Scripts\activate`
 4. Cài đặt thư viện: `pip install -r requirements.txt`
