@@ -1,0 +1,29 @@
+Model,Best_Parameters,CV_Score
+LogisticRegression,"{
+  ""C"": 10,
+  ""max_iter"": 100,
+  ""solver"": ""lbfgs""
+}",0.9686036968582237
+DecisionTree,"{
+  ""criterion"": ""gini"",
+  ""max_depth"": 20,
+  ""min_samples_leaf"": 1,
+  ""min_samples_split"": 5
+}",0.9572467010581984
+SVM,"{
+  ""C"": 1,
+  ""gamma"": ""scale"",
+  ""kernel"": ""linear""
+}",0.967920740722113
+KNN,"{
+  ""metric"": ""euclidean"",
+  ""n_neighbors"": 3,
+  ""weights"": ""distance""
+}",0.9542224705163227
+RandomForest,"{
+  ""max_depth"": null,
+  ""max_features"": ""sqrt"",
+  ""min_samples_leaf"": 1,
+  ""min_samples_split"": 10,
+  ""n_estimators"": 200
+}",0.9653871858547804

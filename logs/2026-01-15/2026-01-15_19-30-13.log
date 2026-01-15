@@ -1,0 +1,4 @@
+[2026-01-15 19:30:14]: training_pipeline.py - Line 17: INFO: Initiating training pipeline
+[2026-01-15 19:30:14]: data_ingestion.py - Line 14: INFO: Loading data
+[2026-01-15 19:30:14]: data_ingestion.py - Line 19: ERROR: Failed to load data: [Errno 2] No such file or directory: 'data/dataset/dataset.csv'
+[2026-01-15 19:30:14]: training_pipeline.py - Line 47: ERROR: Pipeline failed: [Errno 2] No such file or directory: 'data/dataset/dataset.csv'

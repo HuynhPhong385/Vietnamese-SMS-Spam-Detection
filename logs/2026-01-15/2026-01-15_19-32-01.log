@@ -1,0 +1,90 @@
+[2026-01-15 19:32:02]: training_pipeline.py - Line 17: INFO: Initiating training pipeline
+[2026-01-15 19:32:02]: data_ingestion.py - Line 14: INFO: Loading data
+[2026-01-15 19:32:02]: data_ingestion.py - Line 16: INFO: Data loaded successfully
+[2026-01-15 19:32:02]: training_pipeline.py - Line 20: INFO: Data loaded successfully: (5569, 2)
+[2026-01-15 19:32:02]: training_pipeline.py - Line 21: INFO: Columns: ['labels', 'texts_vi']
+[2026-01-15 19:32:02]: training_pipeline.py - Line 22: INFO: Sample size: 5569 emails
+[2026-01-15 19:32:02]: data_transformation.py - Line 38: INFO: Bắt đầu quy trình Data Transformation cho Tiếng Việt
+[2026-01-15 19:32:02]: data_transformation.py - Line 51: INFO: Label encoding xong. Dữ liệu: (5120, 2)
+[2026-01-15 19:32:02]: data_transformation.py - Line 54: INFO: Đang thực hiện tách từ và xóa dấu Tiếng Việt...
+[2026-01-15 19:32:02]: data_transformation.py - Line 67: INFO: Chia tập dữ liệu xong. Train: 3584, Test: 1536
+[2026-01-15 19:32:02]: data_transformation.py - Line 81: INFO: TF-IDF hoàn tất. Số lượng đặc trưng (Features): 5000
+[2026-01-15 19:32:02]: data_transformation.py - Line 93: INFO: Hoàn thành Data Transformation thành công!
+[2026-01-15 19:32:02]: training_pipeline.py - Line 26: INFO: Data transformation completed
+[2026-01-15 19:32:02]: training_pipeline.py - Line 27: INFO: Training set: 3584 samples
+[2026-01-15 19:32:02]: training_pipeline.py - Line 28: INFO: Test set: 1536 samples
+[2026-01-15 19:32:02]: training_pipeline.py - Line 29: INFO: TF-IDF features: 5000
+[2026-01-15 19:32:02]: model_training.py - Line 161: INFO: Model training started
+[2026-01-15 19:32:02]: model_training.py - Line 162: INFO: Using GridSearchCV with 5-fold CV
+[2026-01-15 19:32:02]: model_training.py - Line 183: INFO: 
+============================================================
+[2026-01-15 19:32:02]: model_training.py - Line 184: INFO: Training LogisticRegression...
+[2026-01-15 19:32:06]: model_training.py - Line 219: INFO: LogisticRegression - Training time: 3.70 seconds
+[2026-01-15 19:32:06]: model_training.py - Line 220: INFO: LogisticRegression - Best Parameters: {'C': 10, 'max_iter': 100, 'solver': 'liblinear'}
+[2026-01-15 19:32:06]: model_training.py - Line 221: INFO: LogisticRegression - CV Score: 0.9684
+[2026-01-15 19:32:06]: model_training.py - Line 222: INFO: LogisticRegression - Test Accuracy: 0.9395
+[2026-01-15 19:32:06]: model_training.py - Line 223: INFO: LogisticRegression - Test Precision: 0.9366
+[2026-01-15 19:32:06]: model_training.py - Line 224: INFO: LogisticRegression - Test Recall: 0.9395
+[2026-01-15 19:32:06]: model_training.py - Line 225: INFO: LogisticRegression - Test F1-Score: 0.9363
+[2026-01-15 19:32:06]: model_training.py - Line 183: INFO: 
+============================================================
+[2026-01-15 19:32:06]: model_training.py - Line 184: INFO: Training DecisionTree...
+[2026-01-15 19:32:14]: model_training.py - Line 219: INFO: DecisionTree - Training time: 7.92 seconds
+[2026-01-15 19:32:14]: model_training.py - Line 220: INFO: DecisionTree - Best Parameters: {'criterion': 'gini', 'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 2}
+[2026-01-15 19:32:14]: model_training.py - Line 221: INFO: DecisionTree - CV Score: 0.9575
+[2026-01-15 19:32:14]: model_training.py - Line 222: INFO: DecisionTree - Test Accuracy: 0.9225
+[2026-01-15 19:32:14]: model_training.py - Line 223: INFO: DecisionTree - Test Precision: 0.9173
+[2026-01-15 19:32:14]: model_training.py - Line 224: INFO: DecisionTree - Test Recall: 0.9225
+[2026-01-15 19:32:14]: model_training.py - Line 225: INFO: DecisionTree - Test F1-Score: 0.9174
+[2026-01-15 19:32:14]: model_training.py - Line 183: INFO: 
+============================================================
+[2026-01-15 19:32:14]: model_training.py - Line 184: INFO: Training SVM...
+[2026-01-15 19:32:18]: model_training.py - Line 219: INFO: SVM - Training time: 4.01 seconds
+[2026-01-15 19:32:18]: model_training.py - Line 220: INFO: SVM - Best Parameters: {'C': 1, 'gamma': 'scale', 'kernel': 'linear'}
+[2026-01-15 19:32:18]: model_training.py - Line 221: INFO: SVM - CV Score: 0.9682
+[2026-01-15 19:32:18]: model_training.py - Line 222: INFO: SVM - Test Accuracy: 0.9421
+[2026-01-15 19:32:18]: model_training.py - Line 223: INFO: SVM - Test Precision: 0.9396
+[2026-01-15 19:32:18]: model_training.py - Line 224: INFO: SVM - Test Recall: 0.9421
+[2026-01-15 19:32:18]: model_training.py - Line 225: INFO: SVM - Test F1-Score: 0.9389
+[2026-01-15 19:32:18]: model_training.py - Line 183: INFO: 
+============================================================
+[2026-01-15 19:32:18]: model_training.py - Line 184: INFO: Training KNN...
+[2026-01-15 19:32:23]: model_training.py - Line 219: INFO: KNN - Training time: 4.52 seconds
+[2026-01-15 19:32:23]: model_training.py - Line 220: INFO: KNN - Best Parameters: {'metric': 'manhattan', 'n_neighbors': 3, 'weights': 'distance'}
+[2026-01-15 19:32:23]: model_training.py - Line 221: INFO: KNN - CV Score: 0.9528
+[2026-01-15 19:32:23]: model_training.py - Line 222: INFO: KNN - Test Accuracy: 0.9141
+[2026-01-15 19:32:23]: model_training.py - Line 223: INFO: KNN - Test Precision: 0.9073
+[2026-01-15 19:32:23]: model_training.py - Line 224: INFO: KNN - Test Recall: 0.9141
+[2026-01-15 19:32:23]: model_training.py - Line 225: INFO: KNN - Test F1-Score: 0.9054
+[2026-01-15 19:32:23]: model_training.py - Line 183: INFO: 
+============================================================
+[2026-01-15 19:32:23]: model_training.py - Line 184: INFO: Training RandomForest...
+[2026-01-15 19:33:58]: model_training.py - Line 219: INFO: RandomForest - Training time: 95.77 seconds
+[2026-01-15 19:33:58]: model_training.py - Line 220: INFO: RandomForest - Best Parameters: {'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 10, 'n_estimators': 100}
+[2026-01-15 19:33:58]: model_training.py - Line 221: INFO: RandomForest - CV Score: 0.9646
+[2026-01-15 19:33:58]: model_training.py - Line 222: INFO: RandomForest - Test Accuracy: 0.9414
+[2026-01-15 19:33:58]: model_training.py - Line 223: INFO: RandomForest - Test Precision: 0.9391
+[2026-01-15 19:33:58]: model_training.py - Line 224: INFO: RandomForest - Test Recall: 0.9414
+[2026-01-15 19:33:58]: model_training.py - Line 225: INFO: RandomForest - Test F1-Score: 0.9376
+[2026-01-15 19:33:58]: model_training.py - Line 232: INFO: ============================================================
+[2026-01-15 19:33:58]: model_training.py - Line 233: INFO: BEST MODEL: SVM
+[2026-01-15 19:33:58]: model_training.py - Line 234: INFO: Best F1-Score: 0.9389
+[2026-01-15 19:33:58]: model_training.py - Line 235: INFO: Best Parameters: {'C': 1, 'gamma': 'scale', 'kernel': 'linear'}
+[2026-01-15 19:33:58]: model_training.py - Line 236: INFO: ============================================================
+[2026-01-15 19:33:58]: model_training.py - Line 42: INFO: Saved TF-IDF vectorizer: outputs\2026-01-15_19-33-58\models\vectorizer.pkl
+[2026-01-15 19:33:58]: model_training.py - Line 47: INFO: Saved best model: SVM_model.pkl
+[2026-01-15 19:33:58]: model_training.py - Line 62: INFO: Saved metadata: outputs\2026-01-15_19-33-58\observations\model_metadata.csv
+[2026-01-15 19:33:58]: model_training.py - Line 92: INFO: Saved: model_comparison_summary.csv
+[2026-01-15 19:33:58]: model_training.py - Line 113: INFO: Saved: best_parameters.csv
+[2026-01-15 19:33:58]: model_training.py - Line 129: INFO: Saved: cross_validation_summary.csv
+[2026-01-15 19:33:58]: model_training.py - Line 157: INFO: Saved: best_model_info.csv
+[2026-01-15 19:33:58]: model_training.py - Line 247: INFO: 
+Model training completed successfully
+[2026-01-15 19:33:58]: model_training.py - Line 248: INFO: All outputs saved to: outputs\2026-01-15_19-33-58/
+[2026-01-15 19:33:58]: training_pipeline.py - Line 37: INFO: 
+======================================================================
+[2026-01-15 19:33:58]: training_pipeline.py - Line 38: INFO: Training pipeline completed successfully
+[2026-01-15 19:33:58]: training_pipeline.py - Line 39: INFO: ======================================================================
+[2026-01-15 19:33:58]: training_pipeline.py - Line 40: INFO: All metrics saved to 'results/' directory
+[2026-01-15 19:33:58]: training_pipeline.py - Line 41: INFO: Best model: SVM
+[2026-01-15 19:33:58]: training_pipeline.py - Line 42: INFO: Best F1-Score: 0.9389
